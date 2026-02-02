@@ -1,0 +1,110 @@
+// Replace below project details with your project details. Add all your projects details here as per below object structure, and it will populate it in projects sections.
+export const projectsdata = () => [
+  {
+    title: "AI-powered disease detection system",
+    name: "Coffee Leaf Disease Detection",
+    banner:
+      "https://img.icons8.com/color/96/artificial-intelligence.png",
+    gradient: "linear-gradient(135deg, #0f2027, #203a43, #2c5364)",
+    skills: [
+      "Python",
+      "YOLO",
+      "Computer Vision",
+      "Deep Learning",
+      "OpenCV",
+    ],
+    description: `An AI system leveraging YOLO for identifying coffee leaf diseases including rust and cercospora with real-time detection capabilities.`,
+    link: null,
+    github:
+      "https://github.com/bharathlogs/Coffee-Leaf-Disease-Detection",
+    logo: "https://img.icons8.com/color/96/artificial-intelligence.png",
+    features: [
+      "Real-time coffee leaf disease detection using YOLO",
+      "Identifies diseases including rust and cercospora",
+      "Computer vision based analysis system",
+    ],
+    snapshots: [],
+    height: 800,
+    others: [],
+  },
+  {
+    title: "Real-time facial analysis system",
+    name: "Head Pose & Mouth Detection using AI",
+    banner:
+      "https://img.icons8.com/color/96/face-id.png",
+    gradient: "linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)",
+    skills: ["Python", "MediaPipe", "OpenCV", "Computer Vision", "AI"],
+    description: `Facial analysis tool using MediaPipe and OpenCV for detecting head orientation and mouth positions in real-time.`,
+    link: null,
+    github:
+      "https://github.com/bharathlogs/Real-Time-Head-Pose-and-Mouth-State-Detection-System",
+    logo: "https://img.icons8.com/color/96/face-id.png",
+    features: [
+      "Real-time head pose estimation",
+      "Mouth state detection (open/closed)",
+      "Uses MediaPipe face mesh for landmark detection",
+    ],
+    snapshots: [],
+    height: 800,
+    others: [],
+  },
+  {
+    title: "Department magazine website",
+    name: "Sona Magz",
+    banner:
+      "https://img.icons8.com/color/96/magazine.png",
+    gradient: "linear-gradient(135deg, #232526, #414345)",
+    skills: ["HTML", "CSS", "JavaScript", "AWS S3"],
+    description: `Responsive departmental magazine website built with HTML, CSS, JavaScript and hosted on AWS S3.`,
+    link: null,
+    github: "https://github.com/bharathlogs/Sona-Magz",
+    logo: "https://img.icons8.com/color/96/magazine.png",
+    features: [
+      "Responsive design",
+      "AWS S3 hosting",
+      "Modern UI with HTML/CSS/JS",
+    ],
+    snapshots: [],
+    height: 800,
+    others: [],
+  },
+  {
+    title: "Mobile food vendor discovery app",
+    name: "FoodVendorApp",
+    banner:
+      "https://img.icons8.com/color/96/food-cart.png",
+    gradient: "linear-gradient(135deg, #1d2b64, #f8cdda20)",
+    skills: ["Dart", "Flutter", "Mobile Development", "Maps API"],
+    description: `A real-time mobile application for discovering nearby food vendors with location tracking and interactive mapping features.`,
+    link: null,
+    github: "https://github.com/bharathlogs/FoodVendorApp",
+    logo: "https://img.icons8.com/color/96/food-cart.png",
+    features: [
+      "Real-time location tracking",
+      "Interactive map of nearby vendors",
+      "Mobile-first design with Flutter",
+    ],
+    snapshots: [],
+    height: 800,
+    others: [],
+  },
+  {
+    title: "Modern landing page",
+    name: "Web Dev",
+    banner:
+      "https://img.icons8.com/color/96/web-design.png",
+    gradient: "linear-gradient(135deg, #141e30, #243b55)",
+    skills: ["HTML", "CSS", "JavaScript"],
+    description: `A contemporary landing page project showcasing modern web development techniques.`,
+    link: null,
+    github: "https://github.com/bharathlogs/Web-Dev",
+    logo: "https://img.icons8.com/color/96/web-design.png",
+    features: [
+      "Modern responsive design",
+      "Clean HTML/CSS implementation",
+    ],
+    snapshots: [],
+    height: 800,
+    others: [],
+  },
+];
