@@ -6,7 +6,7 @@ A personal portfolio website designed to look and feel like Visual Studio Code. 
 
 ## Live Demo
 
-[bharathloganathan.dev](https://www.bharathloganathan.dev)
+[bharathloganathan.vercel.app](https://bharathloganathan.vercel.app)
 
 ## Features
 
@@ -119,6 +119,6 @@ This project is open source and available under the [MIT License](LICENSE.md).
 ## Author
 
 **Bharath Loganathan**
-- Website: [bharathloganathan.dev](https://www.bharathloganathan.dev)
+- Website: [bharathloganathan.vercel.app](https://bharathloganathan.vercel.app)
 - GitHub: [@bharathlogs](https://github.com/bharathlogs)
 - LinkedIn: [Bharath Loganathan](https://www.linkedin.com/in/bharath-loganathan-100666253)
