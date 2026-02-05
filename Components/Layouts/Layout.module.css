@@ -45,3 +45,23 @@
   overflow-x: hidden;
   margin-left: 100px;
 }
+
+/* Mobile responsive styles */
+@media only screen and (max-width: 943px) {
+  .navside {
+    width: 47px;
+    min-width: 47px;
+  }
+
+  .mainside {
+    margin-left: 0;
+  }
+
+  .mainsidecollapse {
+    margin-left: 0;
+  }
+
+  .layoutContainer {
+    flex-direction: column;
+  }
+}

@@ -704,3 +704,101 @@ li {
   background-color: #555;
 }
 
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 943px) {
+  .containerCenterImage {
+    width: 100vw;
+    height: auto;
+    min-height: calc(100vh - 60px);
+    padding: 1rem;
+    margin-left: 0 !important;
+  }
+
+  .vscodecontainer {
+    margin-top: 1rem !important;
+    margin-bottom: 5rem !important;
+    padding: 0.5rem !important;
+  }
+
+  .header-menu {
+    display: none !important;
+  }
+
+  .menu-option {
+    width: 200px;
+    z-index: 100;
+  }
+
+  .side-header {
+    width: 47px;
+    z-index: 100;
+  }
+
+  .bottom-header {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+  }
+
+  .editor-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .editor-tab {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .editor-tab-name {
+    font-size: 11px;
+  }
+
+  .maincontainerprofileprojects {
+    position: relative;
+    top: 0;
+  }
+
+  .boxprojectdetails {
+    width: 95%;
+  }
+
+  .timeline {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .vertical-timeline-element-content {
+    padding: 0.8em 1em !important;
+  }
+
+  .vertical-timeline-element-content h3 {
+    font-size: 1rem !important;
+  }
+
+  .vertical-timeline-element-content p {
+    font-size: 0.85rem !important;
+  }
+
+  .bg4040 {
+    width: 100vw;
+  }
+}
+
+/* Small mobile devices */
+@media only screen and (max-width: 480px) {
+  .vscodecontainer {
+    margin-top: 0.5rem !important;
+    padding: 0.25rem !important;
+  }
+
+  .containerCenterImage {
+    padding: 0.5rem;
+  }
+
+  .editor-tab {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+}
+

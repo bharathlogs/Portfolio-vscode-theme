@@ -57,13 +57,13 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="twitter:widgets:csp" content="on" />
       </Head>
-      <main className="w-full  containerCenterImage" style={{ marginLeft: "-100px" }}>
-        <div className="container vscodecontainer mx-auto max-w-5xl w-full p-6 mb:p-12">
+      <main className={`w-full containerCenterImage ${isTabletOrMobile ? '' : 'desktop-main'}`} style={{ marginLeft: isTabletOrMobile ? "0" : "-100px" }}>
+        <div className={`container vscodecontainer mx-auto max-w-5xl w-full ${isTabletOrMobile ? 'p-4' : 'p-6'}`}>
           <div className="flex flex-col mt-1 md:flex-row md:space-x-4">
             <div className="flex-1 mb-4 md:mb-0 ">
-              <div className="p-2">
-                <h2 className="text-5xl font-sans	 mb-2 ">Bharath Loganathan</h2>
-                <h3 className="text-2xl font-sans	 text-gray-500 pt-1 mb-2">
+              <div className={isTabletOrMobile ? "p-1" : "p-2"}>
+                <h2 className={`font-sans mb-2 ${isTabletOrMobile ? 'text-3xl' : 'text-5xl'}`}>Bharath Loganathan</h2>
+                <h3 className={`font-sans text-gray-500 pt-1 mb-2 ${isTabletOrMobile ? 'text-lg' : 'text-2xl'}`}>
                   Data Science Intern | AI/ML Developer
                 </h3>
 
@@ -166,10 +166,10 @@ const Home: NextPage = () => {
                 )}
               </div>
             </div>
-            <div className=" flex-1" style={{ marginLeft: "-100px" }}>
+            <div className="flex-1" style={{ marginLeft: isTabletOrMobile ? "0" : "-100px" }}>
               <div
-                className="p-2 "
-                style={{ paddingTop: isTabletOrMobile ? "5%" : "10%" }}
+                className={isTabletOrMobile ? "p-1" : "p-2"}
+                style={{ paddingTop: isTabletOrMobile ? "2%" : "10%" }}
               >
                 <p className="text-xl text-gray-300 pt-6 mb-1 ">About</p>
                 <p className="text-sm text-gray-400 font-sans pt-1 pb-3">
