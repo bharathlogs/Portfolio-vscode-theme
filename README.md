@@ -42,22 +42,58 @@ A personal portfolio website designed to look and feel like Visual Studio Code. 
 
 ```
 ├── Components/
-│   ├── Helper/          # Utility hooks and functions
-│   ├── Layouts/         # Layout components (sidebar, panels)
-│   ├── SEO/             # Meta tags component
-│   └── SVG/             # Icon components
-├── data/                # Static data (projects, blogs, anime)
-├── lib/                 # Utilities (CSRF, rate limiting, validation)
+│   ├── Helper/
+│   │   ├── useIsMobile.ts       # Responsive hook for mobile detection
+│   │   └── utility.ts           # Utility functions
+│   ├── Layouts/
+│   │   ├── Layout.tsx           # Main layout wrapper
+│   │   ├── SeondPanel/          # Secondary sidebar panel
+│   │   │   ├── SidePanelSubLink.tsx
+│   │   │   └── SideSecondPanel.tsx
+│   │   └── SideMainPanel/
+│   │       └── SideMainPanel.tsx  # Main VS Code-style sidebar
+│   ├── SEO/
+│   │   └── MetaTags.tsx         # SEO meta tags component
+│   ├── SVG/
+│   │   └── IconsSVG.tsx         # Custom SVG icons
+│   ├── AnimeComponent.tsx       # Anime section component
+│   ├── CustomScrollbar.tsx      # Custom scrollbar wrapper
+│   └── ProjectDetails.tsx       # Project detail view
+├── data/
+│   ├── animedata.ts             # Anime list data
+│   ├── BlogsData.ts             # Blog posts data
+│   └── projectsdata.ts          # Projects portfolio data
+├── lib/
+│   ├── csrf.ts                  # CSRF protection
+│   ├── rateLimiter.ts           # API rate limiting
+│   └── validation.ts            # Zod validation schemas
 ├── pages/
-│   ├── Projects/        # Project pages with dynamic routing
-│   ├── index.tsx        # Home page
-│   ├── Skills.tsx       # Skills page
-│   ├── Experience.tsx   # Work experience
-│   ├── Education.tsx    # Education history
-│   ├── Email.tsx        # Contact form
-│   └── ...              # Other pages
-├── public/              # Static assets
-└── styles/              # Global CSS
+│   ├── api/
+│   │   ├── sendEmail.ts         # Contact form API (Resend)
+│   │   └── sendEmailAWS.ts      # Contact form API (AWS SES)
+│   ├── Projects/
+│   │   ├── index.tsx            # Projects listing page
+│   │   └── [projectname].tsx    # Dynamic project detail page
+│   ├── _app.tsx                 # Next.js app wrapper
+│   ├── index.tsx                # Home page
+│   ├── Skills.tsx               # Skills & tech stack
+│   ├── Experience.tsx           # Work experience timeline
+│   ├── Education.tsx            # Education history
+│   ├── Email.tsx                # Contact form
+│   ├── Hobbies.tsx              # Hobbies section
+│   ├── Gaming.tsx               # Gaming hobby page
+│   ├── Anime.tsx                # Anime hobby page
+│   ├── Blogs.tsx                # Blog posts
+│   ├── Learning.tsx             # Learning journey
+│   ├── Startup.tsx              # Startup experience
+│   └── 404.tsx                  # Custom 404 page
+├── public/                      # Static assets (images, audio)
+├── styles/                      # Global CSS styles
+├── types/
+│   └── index.ts                 # TypeScript type definitions
+├── tailwind.config.js           # Tailwind CSS configuration
+├── tsconfig.json                # TypeScript configuration
+└── vercel.json                  # Vercel deployment config
 ```
 
 ## Getting Started
