@@ -1,15 +1,10 @@
 import { NextPage } from "next";
-import { Scrollbars } from "react-custom-scrollbars";
+import CustomScrollbar from "../Components/CustomScrollbar";
 import Head from "next/head";
 
 const Startup: NextPage = () => {
   return (
-    <Scrollbars
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal={true}
-    >
+    <CustomScrollbar>
       {" "}
       <Head>
         <title>Startup</title>
@@ -48,7 +43,7 @@ const Startup: NextPage = () => {
           </div>
         </section>{" "}
       </article>
-    </Scrollbars>
+    </CustomScrollbar>
   );
 };
 

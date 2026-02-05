@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { useState, useEffect } from "react";
-import { Scrollbars } from "react-custom-scrollbars";
+import CustomScrollbar from "../Components/CustomScrollbar";
 import { useIsMobile } from "../Components/Helper/useIsMobile";
 import Head from "next/head";
 import { generateCsrfToken } from "../lib/csrf";
@@ -47,12 +47,7 @@ const Email: NextPage = () => {
   };
 
   return (
-    <Scrollbars
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal={true}
-    >
+    <CustomScrollbar>
       <Head>
         <title>Contact me</title>
         <meta
@@ -336,7 +331,7 @@ const Email: NextPage = () => {
           </section>
         </div>
       )}
-    </Scrollbars>
+    </CustomScrollbar>
   );
 };
 

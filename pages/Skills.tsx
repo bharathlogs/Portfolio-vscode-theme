@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Scrollbars } from "react-custom-scrollbars";
+import CustomScrollbar from "../Components/CustomScrollbar";
 import Head from "next/head";
 import { useState } from "react";
 
@@ -50,12 +50,7 @@ const Skills: NextPage = () => {
   };
 
   return (
-    <Scrollbars
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal={true}
-    >
+    <CustomScrollbar>
       <Head>
         <title>Skills</title>
         <meta name="description" content={`Skills`} />
@@ -136,7 +131,7 @@ const Skills: NextPage = () => {
           ))}
         </div>
       </div>
-    </Scrollbars>
+    </CustomScrollbar>
   );
 };
 

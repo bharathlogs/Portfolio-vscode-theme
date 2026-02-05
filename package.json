@@ -17,7 +17,6 @@
     "next": "13.2.4",
     "nextjs-progressbar": "^0.0.16",
     "react": "^18.2.0",
-    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^18.2.0",
     "react-live-clock": "^5.3.1",
     "react-medium-image-zoom": "^4.3.5",
@@ -32,8 +31,6 @@
   "devDependencies": {
     "@types/node": "16.11.6",
     "@types/react": "17.0.33",
-    "@types/react-custom-scrollbars": "^4.0.9",
-    "@types/react-scrollbar": "^0.5.3",
     "@types/react-vertical-timeline-component": "^3.3.1",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.1",

@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { Scrollbars } from "react-custom-scrollbars";
+import CustomScrollbar from "../Components/CustomScrollbar";
 import { useIsMobile } from "../Components/Helper/useIsMobile";
 import Head from "next/head";
 
@@ -29,12 +29,7 @@ const Gaming: NextPage = () => {
   };
 
   return (
-    <Scrollbars
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal={true}
-    >
+    <CustomScrollbar>
       <Head>
         <title>Gaming </title>
         <meta
@@ -290,7 +285,7 @@ const Gaming: NextPage = () => {
           </section>
         </article>
       )}
-    </Scrollbars>
+    </CustomScrollbar>
   );
 };
 

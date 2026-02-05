@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Scrollbars } from "react-custom-scrollbars";
+import CustomScrollbar from "../Components/CustomScrollbar";
 import { useIsMobile } from "../Components/Helper/useIsMobile";
 import { blogsdata } from "../data/BlogsData";
 import { MetaTags } from "../Components/SEO/MetaTags";
@@ -18,12 +18,7 @@ interface BlogsPageProps {
 const Blogs: NextPage<BlogsPageProps> = ({ blogs }) => {
   const isTabletOrMobile = useIsMobile();
   return (
-    <Scrollbars
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal={true}
-    >
+    <CustomScrollbar>
       <MetaTags
         title="Blogs - Bharath Loganathan"
         description="AI/ML blogs, data science resources, and interesting tech articles."
@@ -124,7 +119,7 @@ const Blogs: NextPage<BlogsPageProps> = ({ blogs }) => {
           </section>
         </article>
       )}
-    </Scrollbars>
+    </CustomScrollbar>
   );
 };
 

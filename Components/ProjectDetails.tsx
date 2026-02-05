@@ -1,4 +1,4 @@
-import { Scrollbars } from "react-custom-scrollbars";
+import CustomScrollbar from "./CustomScrollbar";
 import Image from "next/legacy/image";
 import { useIsMobile } from "./Helper/useIsMobile";
 import Zoom from "react-medium-image-zoom";
@@ -7,12 +7,7 @@ const ProjectDetails: React.FC<any> = ({ projectDetails, altt }: any) => {
   const isTabletOrMobile = useIsMobile();
 
   return !isTabletOrMobile ? (
-    <Scrollbars
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal={true}
-    >
+    <CustomScrollbar>
       <div>
         <div
           style={{
@@ -179,7 +174,7 @@ const ProjectDetails: React.FC<any> = ({ projectDetails, altt }: any) => {
           </div>
         </div>
       </div>{" "}
-    </Scrollbars>
+    </CustomScrollbar>
   ) : (
     <div className=" pb-40 mb-40  w-full">
       <div

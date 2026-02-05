@@ -1,18 +1,13 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import { Scrollbars } from "react-custom-scrollbars";
+import CustomScrollbar from "../Components/CustomScrollbar";
 import { useIsMobile } from "../Components/Helper/useIsMobile";
 import Head from "next/head";
 
 const Hobbies: NextPage = () => {
   const isTabletOrMobile = useIsMobile();
   return (
-    <Scrollbars
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal={true}
-    >
+    <CustomScrollbar>
       <Head>
         <title>Hobbies</title>
         <meta
@@ -128,7 +123,7 @@ const Hobbies: NextPage = () => {
           </main>
         </div>
       )}
-    </Scrollbars>
+    </CustomScrollbar>
   );
 };
 

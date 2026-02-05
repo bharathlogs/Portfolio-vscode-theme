@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
-import { Scrollbars } from "react-custom-scrollbars";
+import CustomScrollbar from "./CustomScrollbar";
 import { animedata } from "../data/animedata";
 import { useIsMobile } from "./Helper/useIsMobile";
 import { AlarmType } from "aws-sdk/clients/cloudwatch";
@@ -29,12 +29,7 @@ const AnimeComponent: React.FC = () => {
   };
 
   return (
-    <Scrollbars
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal={true}
-    >
+    <CustomScrollbar>
       {!isTabletOrMobile ? (
         <article className="ml-3 mt-3 scrollbar pb-20 w-100  bg-appanime text-left ">
           <div className="  flex flex-row rounded-xl overflow-hidden shadow-lg">
@@ -159,7 +154,7 @@ const AnimeComponent: React.FC = () => {
           </div>
         </article>
       )}
-    </Scrollbars>
+    </CustomScrollbar>
   );
 };
 

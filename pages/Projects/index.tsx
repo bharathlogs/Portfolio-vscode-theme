@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Scrollbars } from "react-custom-scrollbars";
+import CustomScrollbar from "../../Components/CustomScrollbar";
 import Link from "next/link";
 import { useIsMobile } from "../../Components/Helper/useIsMobile";
 import { projectsdata } from "../../data/projectsdata";
@@ -20,12 +20,7 @@ const Projects: NextPage<ProjectsPageProps> = ({ projects }) => {
   const isTabletOrMobile = useIsMobile();
 
   return (
-    <Scrollbars
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal={true}
-    >
+    <CustomScrollbar>
       <MetaTags
         title="Projects - Bharath Loganathan"
         description="AI/ML and Development Projects - College and Side Projects"
@@ -110,7 +105,7 @@ const Projects: NextPage<ProjectsPageProps> = ({ projects }) => {
           </div>
         )}
       </div>
-    </Scrollbars>
+    </CustomScrollbar>
   );
 };
 

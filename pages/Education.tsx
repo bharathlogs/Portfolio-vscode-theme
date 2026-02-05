@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Scrollbars } from "react-custom-scrollbars";
+import CustomScrollbar from "../Components/CustomScrollbar";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -12,12 +12,7 @@ import Head from "next/head";
 const Education: NextPage = () => {
   const isTabletOrMobile = useIsMobile();
   return (
-    <Scrollbars
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal={true}
-    >
+    <CustomScrollbar>
       <div>
         <Head>
           <title>Education</title>
@@ -213,7 +208,7 @@ const Education: NextPage = () => {
           </div>
         )}
       </div>
-    </Scrollbars>
+    </CustomScrollbar>
   );
 };
 
